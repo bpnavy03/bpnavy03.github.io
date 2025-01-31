@@ -10,13 +10,6 @@
 
  https://youtu.be/bYgaW_qT7aQ
 
-# Course Planner - Enhancements Overview
-This repository contains the Course Planner project, which uses a Binary Search Tree (BST) to manage and search for college courses. The project has undergone three major enhancements, improving functionality, efficiency, and user interaction.
-
-📌 Live Demo: Course Planner GitHub Pages
-
-📌 GitHub Repository: bpnavy03.github.io
-
 # 🚀 Enhancements Summary
 
 # Enhancement 1: C++ to Python Conversion
