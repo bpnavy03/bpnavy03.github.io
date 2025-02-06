@@ -1,0 +1,4 @@
+ls
+clear
+g++ -o bid VectorSorting.cpp CSVparser.cpp -std=c++11
+./bid eBid_Monthly_Sales.csv
