@@ -5,8 +5,8 @@
 
 📌 GitHub Repository: bpnavy03.github.io
 
-# 📽️ Video Demonstration
- A demonstration of the Course Planner with all enhancements:
+# 📽️ Video Code Review
+ Watch a video code review of the original artifact:
 
  https://youtu.be/bYgaW_qT7aQ
 
