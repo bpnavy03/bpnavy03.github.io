@@ -63,6 +63,7 @@ verify courses.csv is in the same directory as course_planner.py
 Ensure you have MongoDB installed and running. Then, install required Python libraries:
 
 pip install pymongo
+
 pip install tk
 
 3️⃣ Run the Program
