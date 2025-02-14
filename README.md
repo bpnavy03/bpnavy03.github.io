@@ -39,21 +39,40 @@
 
 ✅ Modified the program structure to interact with both CSV files and MongoDB.
 
+# Finalized Enhanced Artifact with GUI
+
+✅ Introduced a Tkinter-based GUI for an improved user experience.
+
+✅ Designed a main window with buttons to load, search, and view courses.
+
+✅ Added input fields for user-friendly course searching.
+
+✅ Implemented list displays for course data from CSV and MongoDB.
+
+✅ Enhanced application accessibility by removing the need for command-line interaction.
+
 # 📥 Installation & Usage
 1️⃣ Clone the Repository
 git clone https://github.com/bpnavy03/bpnavy03.github.io.git
 
 cd bpnavy03.github.io
 
+verify courses.csv is in the same directory as course_planner.py
+
 2️⃣ Install Dependencies
 Ensure you have MongoDB installed and running. Then, install required Python libraries:
 
 pip install pymongo
+pip install tk
 
 3️⃣ Run the Program
 Ensure MongoDB is running, then start the application:
 
 python course_planner.py
+
+-OR-
+
+click on course_planner.py in your installed directory
 
 # 🌐 GitHub Pages Site
 The latest version of the Course Planner is deployed here:
@@ -64,7 +83,7 @@ The latest version of the Course Planner is deployed here:
 
 🔹 Implement MongoDB Atlas for cloud-based storage.
 
-🔹 Add a user-friendly GUI for better interaction.
+🔹 Add function for creating a tentative course schedule.
 
 🔹 Expand search features using AI-based recommendations.
 
