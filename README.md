@@ -1,10 +1,6 @@
 # Course Planner - Enhancements Overview
  This repository contains the Course Planner project, which uses a Binary Search Tree (BST) to manage and search for college courses. The project has undergone three major enhancements, improving functionality, efficiency, and user interaction.
 
-📌 Live Demo: Course Planner GitHub Pages
-
-📌 GitHub Repository: bpnavy03.github.io
-
 # 📽️ Video Code Review
  Watch a video code review of the original artifact:
 
@@ -19,6 +15,8 @@
 
 ✅ Replaced manual memory management from C++ with Python’s garbage collection.
 
+# Enhancement 1 Narrative
+
 # Enhancement 2: Sorting & Interactive Search
 
 ✅ Sorting courses by prerequisite count, improving data organization.
@@ -26,6 +24,8 @@
 ✅ Interactive keyword-based search, allowing users to find courses dynamically.
 
 ✅ Enhanced error handling and formatted output for a better user experience.
+
+# Enhancement 2 Narrative
 
 # Enhancement 3: Database Integration Using MongoDB
 
@@ -39,6 +39,8 @@
 
 ✅ Modified the program structure to interact with both CSV files and MongoDB.
 
+# Enhancement 3 Narrative
+
 # Finalized Enhanced Artifact with GUI
 
 ✅ Introduced a Tkinter-based GUI for an improved user experience.
@@ -50,6 +52,8 @@
 ✅ Implemented list displays for course data from CSV and MongoDB.
 
 ✅ Enhanced application accessibility by removing the need for command-line interaction.
+
+# 💡 Professional Self-Assessment
 
 # 📥 Installation & Usage
 1️⃣ Clone the Repository
