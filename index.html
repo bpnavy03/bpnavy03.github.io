@@ -163,7 +163,8 @@ cd bpnavy03.github.io</code></pre>
 				<pre><code>Start MongoDB: mongod --dbpath "C:\Program Files\MongoDB\Server\8.0\data"</code></pre>
 				<pre><code>Open the Mongo Shell: mongosh</code></pre>
 				<pre><code>Switch to the course database: use course_planner</code></pre>
-				<pre><code>Import the CSV file into MongoDB: mongoimport --db course_planner --collection courses --type csv --file courses.csv --headerline</code></pre>
+				<pre><code>Import the CSV file into MongoDB using:</code></pre>
+				<pre><code>mongoimport --db course_planner --collection courses --type csv --file courses.csv --headerline</code></pre>
 				<pre><code>Verify CSV file was imported into MongoDB correctly: db.courses.find().pretty()</pre></code>
 			</li>
         </ol>
@@ -172,14 +173,16 @@ cd bpnavy03.github.io</code></pre>
 			<li><strong>Running in GUI mode:</strong>
 				<pre><code>Open a command prompt/windows PowerShell/terminal, navigate to the program directory, and run: python course_planner.py</code></pre>
 				<pre><code>The Tkinter GUI will launch, providing buttons for loading course data, searching, and sorting courses.</code></pre>
-				<pre><code>Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. Then use option 6 to load course data from MongoDB.</pre></code>
+				<pre><code>Start with option 1 and enter courses.csv. The CSV file should be loaded successfully.</code></pre>
+				<pre><code>Then use option 6 to load course data from MongoDB.</pre></code>
 				<pre><code>The GUI includes interactive elements such as dropdowns, text input, and buttons for a seamless experience.</code></pre>
 			</li>
 			<li><strong>Running the Command-Line Interface (CLI) Mode</strong>
 			<pre><code>Open a command prompt/windows PowerShell/terminal and navigate to the program directory.</code></pre>
 			<pre><code>Run: python course_planner.py</code></pre>
 			<pre><code>Navigate the menu using the provided options.</code></pre>
-			<pre><code>Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. The use option 6 to load course data from MongoDB.</code></pre>
+			<pre><code>Start with option 1 and enter courses.csv. The CSV file should be loaded successfully.</code></pre>
+			<pre><code>The use option 6 to load course data from MongoDB.</code></pre>
 			<pre><code>Use options 2, 3, 4, or 5 to perform course searches. Use option 9 to exit the program.</code></pre>
 			</li>
 		</ol>

@@ -95,19 +95,19 @@ Overall, my ePortfolio is a comprehensive representation of my capabilities as a
 # 📥 Installation & Usage
 🔹Installation & Setup:
 
-Clone the Repository:
+1️⃣  Clone the Repository:
 
-git clone https://github.com/bpnavy03/bpnavy03.github.io.git
+	a) git clone https://github.com/bpnavy03/bpnavy03.github.io.git
 
-cd bpnavy03.github.io
+	b) cd bpnavy03.github.io
 
-1️⃣  Install Python
+2️⃣  Install Python
 
 	a) Ensure Python 3.10+ is installed. You can check this by running the following line in command prompt/windows powershell: python --version
 	
 	b) If Python is not installed, download and install it from python.org
 
-2️⃣  Install Required Packages
+3️⃣  Install Required Packages
 
 	a) Run the following command to install dependencies:
 	
@@ -115,7 +115,7 @@ cd bpnavy03.github.io
 		
 		pip install tk
 
-3️⃣  Prepare the Course Data (CSV File)
+4️⃣  Prepare the Course Data (CSV File)
 
 	a) The program can read course data from a CSV file. This file has been provided.
 	
@@ -123,7 +123,7 @@ cd bpnavy03.github.io
 	
 	c) Location: courses.csv must be in the same directory as course_planner.py
 
-4️⃣  Setup MongoDB (Optional)-- If you want to use MongoDB integration, follow these steps:
+5️⃣  Setup MongoDB (Optional)-- If you want to use MongoDB integration, follow these steps:
 
 	a) Install MongoDB
 	
