@@ -49,7 +49,7 @@ Usage Instructions:
 	c) Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. Then use option 6 to load course data from MongoDB.
 	d) The GUI includes interactive elements such as dropdowns, text input, and buttons for a seamless experience.
 
-2) Running the Command-Line Interface (CLI) Mode
+2) Running the Command-Line Interface (CLI) Mode (i.e., Enhancement 3)
 
 	a) Open a command prompt/windows PowerShell/terminal and navigate to the program directory.
 	b) Run: python course_planner.py
@@ -57,7 +57,7 @@ Usage Instructions:
 	d) Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. The use option 6 to load course data from MongoDB.
 	e) Use options 2, 3, 4, or 5 to perform course searches. Use option 9 to exit the program.
 
-Error Hanlding & Troubleshooting:
+Error Handling & Troubleshooting:
 
 1) File Not Found?
 	a) ensure courses.csv is in the same directory as course_planner.py

@@ -155,7 +155,7 @@ Overall, my ePortfolio is a comprehensive representation of my capabilities as a
 	
 	d) The GUI includes interactive elements such as dropdowns, text input, and buttons for a seamless experience.
 
-2️⃣  Running the Command-Line Interface (CLI) Mode
+2️⃣  Running the Command-Line Interface (CLI) Mode (i.e., Enhancement 3)
 
 	a) Open a command prompt/windows PowerShell/terminal and navigate to the program directory.
 	
@@ -171,6 +171,32 @@ Overall, my ePortfolio is a comprehensive representation of my capabilities as a
 The latest version of the Course Planner is deployed here:
 
 🔗 https://bpnavy03.github.io/
+
+# Error Handling & Troubleshooting:
+
+1️⃣  File Not Found?
+
+	a) ensure courses.csv is in the same directory as course_planner.py
+
+2️⃣  Invalid Input?
+
+	a) Check that course IDs exist within the CSV
+
+3️⃣  No Search Result?
+
+	a) Try different keywords for interactive search
+
+4️⃣  MongoDB Errors?
+
+	a) Ensure MongoDB is running before loading data: net start MongoDB
+	
+	b) If mongoImport fails, check your MongoDB version
+
+5️⃣  Tkinter GUI Not Launching?
+
+	a) Ensure tkinter is installed:
+	
+		pip install tk
 
 # 🛠 Future Improvements
 
