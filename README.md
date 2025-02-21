@@ -1,7 +1,22 @@
 # Course Planner - Enhancements Overview
- This repository contains the Course Planner project, which uses a Binary Search Tree (BST) to manage and search for college courses. The project has undergone three major enhancements, improving functionality, efficiency, and user interaction.
+ This repository contains the Course Planner project, which uses a Binary Search Tree (BST) to manage and search for college courses. The project has undergone three major enhancements, improving functionality, efficiency, and user interaction. A GUI has been implemented for a greater user experience.
 
-# 📽️ Video Code Review
+# Features
+🔹 Load course data from a CSV file into a BST
+
+🔹 Search for courses by ID in BST
+
+🔹 Sort courses by the number of prerequisites in BST
+
+🔹 Interactive keyword-based search in BST (now case-insensitive!)
+
+🔹 Load courses from MongoDB
+
+🔹 Search for a course in MongoDB
+
+🔹 Graphic User Interface (GUI) using Tkinter for improved usability
+
+# 📽️ Code Review Video
  Watch a video code review of the original artifact:
 
  https://youtu.be/bYgaW_qT7aQ
@@ -78,28 +93,79 @@ The artifacts I have developed throughout my academic journey collectively demon
 Overall, my ePortfolio is a comprehensive representation of my capabilities as a software developer. It showcases my ability to design and implement efficient algorithms, develop secure database-driven applications, and effectively communicate my work to a broader audience. The skills I have acquired throughout this program have prepared me to enter the industry with confidence, and I am eager to apply my knowledge in a professional setting. This professional self-assessment serves as a reflection of my growth and as an introduction to my technical artifacts, which illustrate the depth of my expertise and my commitment to excellence in software development.
 
 # 📥 Installation & Usage
-1️⃣ Clone the Repository
+🔹Installation & Setup:
+
+Clone the Repository:
+
 git clone https://github.com/bpnavy03/bpnavy03.github.io.git
 
 cd bpnavy03.github.io
 
-verify courses.csv is in the same directory as course_planner.py
+1️⃣  Install Python
 
-2️⃣ Install Dependencies
-Ensure you have MongoDB installed and running. Then, install required Python libraries:
+	a) Ensure Python 3.10+ is installed. You can check this by running the following line in command prompt/windows powershell: python --version
+	
+	b) If Python is not installed, download and install it from python.org
 
-pip install pymongo
+2️⃣  Install Required Packages
 
-pip install tk
+	a) Run the following command to install dependencies:
+	
+		pip install pymongo
+		
+		pip install tk
 
-3️⃣ Run the Program
-Ensure MongoDB is running, then start the application:
+3️⃣  Prepare the Course Data (CSV File)
 
-python course_planner.py
+	a) The program can read course data from a CSV file. This file has been provided.
+	
+	b) File Name: courses.csv
+	
+	c) Location: courses.csv must be in the same directory as course_planner.py
 
--OR-
+4️⃣  Setup MongoDB (Optional)-- If you want to use MongoDB integration, follow these steps:
 
-click on course_planner.py in your installed directory
+	a) Install MongoDB
+	
+		1)Download from mongodb.com. Install it and ensure the server is running.
+		
+	b) Import course data into MongoDB
+	
+		1) Start MongoDB: mongod --dbpath "C:\Program Files\MongoDB\Server\8.0\data"
+		
+		2) Open the Mongo Shell: mongosh
+		
+		3) Switch to the course database: use course_planner
+		
+		4) Import the CSV file into MongoDB: mongoimport --db course_planner --collection courses --type csv --file courses.csv --headerline
+		
+		5) Verify CSV file was imported into MongoDB correctly: db.courses.find().pretty()
+
+🔹Usage Instructions:
+
+1️⃣  Running the GUI Mode
+
+	a) Open a command prompt/windows PowerShell/terminal, navigate to the program directory, and run:
+	
+		python course_planner.py
+		
+	b) The Tkinter GUI will launch, providing buttons for loading course data, searching, and sorting courses.
+	
+	c) Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. Then use option 6 to load course data from MongoDB.
+	
+	d) The GUI includes interactive elements such as dropdowns, text input, and buttons for a seamless experience.
+
+2️⃣  Running the Command-Line Interface (CLI) Mode
+
+	a) Open a command prompt/windows PowerShell/terminal and navigate to the program directory.
+	
+	b) Run: python course_planner.py
+	
+	c) Navigate the menu using the provided options.
+	
+	d) Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. The use option 6 to load course data from MongoDB.
+	
+	e) Use options 2, 3, 4, or 5 to perform course searches. Use option 9 to exit the program.
 
 # 🌐 GitHub Pages Site
 The latest version of the Course Planner is deployed here:

@@ -47,7 +47,18 @@
         <h1>Course Planner - Enhancements Overview</h1>
         <p>Welcome! This page showcases the <strong>Course Planner</strong> project and its three major enhancements, demonstrating improvements in functionality, efficiency, and user interaction.</p>
 
-        <h2>Project Demo</h2>
+		<h2>Features:</h2>
+        <ul>
+            <li>Load course data from a CSV file into a BST</li>
+            <li>Search for courses by ID in BST</li>
+            <li>Sort courses by the number of prerequisites in BST</li>
+            <li>Interactive keyword-based search in BST (now case-insensitive!)</li>
+            <li>Load courses from MongoDB</li>
+            <li>Search for a course in MongoDB</li>
+			<li>Graphic User Interface (GUI) using Tkinter for improved usability</li>
+        </ul>		
+
+        <h2>Code Review Video</h2>
         <p>Watch a video code review of the original artifact:</p>
         <p><strong>Watch the video on YouTube:</strong> <a href="https://youtu.be/bYgaW_qT7aQ" target="_blank">Click here to view</a></p>
 
@@ -128,8 +139,9 @@
         <p>For more details on each enhancement, refer to the project documentation on GitHub:</p>
         <p><a href="https://github.com/bpnavy03/bpnavy03.github.io" target="_blank">View Full Project Repository</a></p>
 		
-		        <h2>📥 Installation & Usage</h2>
+		<h2>📥 Installation & Usage</h2>
         <p>To install and run the Course Planner with MongoDB integration, follow these steps:</p>
+		<p><strong>Installation & Setup:</strong></p>		
         <ol>
             <li><strong>Clone the Repository:</strong>
                 <pre><code>git clone https://github.com/bpnavy03/bpnavy03.github.io.git
@@ -139,10 +151,38 @@ cd bpnavy03.github.io</code></pre>
                 <pre><code>pip install pymongo</code></pre>
 				<pre><code>pip install tk</code></pre>
             </li>
-            <li><strong>Run the Program:</strong>
-                <pre><code>python course_planner.py</code></pre>
+			<li><strong>Prepare the course data:</strong>
+				<pre><code>The program can read course data from a CSV file. This file has been provided.</code></pre>
+				<pre><code><strong>File Name:</strong> courses.csv</code></pre>
+				<pre><code><strong>Location:</strong> courses.csv must be in the same directory as course_planner.py</code></pre>
+			</li>
+            <li><strong>Setup MongoDB (optional):</strong>
+                <pre><code>Install/verify installation of MongoDB</code></pre>
             </li>
+			<li><strong>Import Course Data into MongoDB:</strong>
+				<pre><code>Start MongoDB: mongod --dbpath "C:\Program Files\MongoDB\Server\8.0\data"</code></pre>
+				<pre><code>Open the Mongo Shell: mongosh</code></pre>
+				<pre><code>Switch to the course database: use course_planner</code></pre>
+				<pre><code>Import the CSV file into MongoDB: mongoimport --db course_planner --collection courses --type csv --file courses.csv --headerline</code></pre>
+				<pre><code>Verify CSV file was imported into MongoDB correctly: db.courses.find().pretty()</pre></code>
+			</li>
         </ol>
+		<p><strong>Usage Instructions:</strong></p>
+		<ol>
+			<li><strong>Running in GUI mode:</strong>
+				<pre><code>Open a command prompt/windows PowerShell/terminal, navigate to the program directory, and run: python course_planner.py</code></pre>
+				<pre><code>The Tkinter GUI will launch, providing buttons for loading course data, searching, and sorting courses.</code></pre>
+				<pre><code>Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. Then use option 6 to load course data from MongoDB.</pre></code>
+				<pre><code>The GUI includes interactive elements such as dropdowns, text input, and buttons for a seamless experience.</code></pre>
+			</li>
+			<li><strong>Running the Command-Line Interface (CLI) Mode</strong>
+			<pre><code>Open a command prompt/windows PowerShell/terminal and navigate to the program directory.</code></pre>
+			<pre><code>Run: python course_planner.py</code></pre>
+			<pre><code>Navigate the menu using the provided options.</code></pre>
+			<pre><code>Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. The use option 6 to load course data from MongoDB.</code></pre>
+			<pre><code>Use options 2, 3, 4, or 5 to perform course searches. Use option 9 to exit the program.</code></pre>
+			</li>
+		</ol>
 
 		<h2>💡 Professional Self-Assessment</h2>
 		<p>Throughout my academic journey in the Computer Science program, I have gained extensive knowledge and hands-on experience that have significantly shaped my professional aspirations and strengthened my technical expertise. Completing my coursework and developing my ePortfolio have allowed me to refine my problem-solving skills, enhance my ability to collaborate in a team environment, and improve my ability to communicate complex technical concepts to diverse stakeholders. These experiences have prepared me to enter the software development field as a more competent and well-rounded professional.</p>
@@ -151,15 +191,11 @@ cd bpnavy03.github.io</code></pre>
 		<p>The artifacts I have developed throughout my academic journey collectively demonstrate my ability to integrate multiple disciplines in computer science, including software engineering, algorithms and data structures, database management, and security principles. My work on the Course Planner project exemplifies my ability to build robust software solutions while considering efficiency, scalability, and security. This project also highlights my ability to transition between different programming paradigms, as it was originally implemented in C++ before being optimized and extended in Python.</p>
 		<p>Overall, my ePortfolio is a comprehensive representation of my capabilities as a software developer. It showcases my ability to design and implement efficient algorithms, develop secure database-driven applications, and effectively communicate my work to a broader audience. The skills I have acquired throughout this program have prepared me to enter the industry with confidence, and I am eager to apply my knowledge in a professional setting. This professional self-assessment serves as a reflection of my growth and as an introduction to my technical artifacts, which illustrate the depth of my expertise and my commitment to excellence in software development.</p>
 
-        <h2>🌐 GitHub Pages Site</h2>
-        <p>The latest version of the Course Planner is deployed here:</p>
-        <p><a href="https://bpnavy03.github.io/" target="_blank">🔗 Course Planner GitHub Pages</a></p>
-
         <h2>🛠 Future Improvements</h2>
         <ul>
-            <li>🔹 Implement MongoDB Atlas for cloud-based storage.</li>
-            <li>🔹 Add function for creating a tentative course schedule.</li>
-            <li>🔹 Expand search features using AI-based recommendations.</li>
+            <li>Implement MongoDB Atlas for cloud-based storage.</li>
+            <li>Add function for creating a tentative course schedule.</li>
+            <li>Expand search features using AI-based recommendations.</li>
         </ul>
 
         <h2>📧 Contact & Contributions</h2>

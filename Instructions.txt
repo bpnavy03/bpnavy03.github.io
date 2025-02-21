@@ -1,0 +1,85 @@
+Course Planner - README
+
+A Python-based course planning tool that loads, searches, and sorts college courses using a Binary Search Tree (BST) and now integrates with MongoDB for additional course data storage.
+The latest update introduces a Tkinter GUI for a more user-friendly experience.
+
+Features:
+
+1) Load course data from a CSV file into a BST
+2) Search for courses by ID in BST
+3) Sort courses by the number of prerequisites in BST
+4) Interactive keyword-based search in BST (now case-insensitive!)
+5) Load courses from MongoDB
+6) Search for a course in MongoDB
+7) Graphic User Interface (GUI) using Tkinter for improved usability
+
+Installation & Setup:
+
+1) Install Python
+	a) Ensure Python 3.10+ is installed. You can check this by running the following line in command prompt/windows powershell: python --version
+	b) If Python is not installed, download and install it from python.org
+
+2) Install Required Packages
+	a) Run the following command to install dependencies:
+		pip install pymongo
+		pip install tk
+
+3) Prepare the Course Data (CSV File)
+	a) The program reads course data from a CSV file. This file has been provided.
+	b) File Name: courses.csv
+	c) Location: courses.csv must be in the same directory as course_planner.py
+
+4) Setup MongoDB (Optional)-- If you want to use MongoDB integration, follow these steps:
+	a) Install MongoDB
+		1)Download from mongodb.com. Install it and ensure the server is running.
+	b) Import course data into MongoDB
+		1) Start MongoDB: mongod --dbpath "C:\Program Files\MongoDB\Server\8.0\data"
+		2) Open the Mongo Shell: mongosh
+		3) Switch to the course database: use course_planner
+		4) Import the CSV file into MongoDB: mongoimport --db course_planner --collection courses --type csv --file courses.csv --headerline
+		5) Verify CSV file was imported into MongoDB correctly: db.courses.find().pretty()
+
+Usage Instructions:
+
+1) Running the GUI Mode
+
+	a) Open a command prompt/windows PowerShell/terminal, navigate to the program directory, and run:
+		python course_planner.py
+	b) The Tkinter GUI will launch, providing buttons for loading course data, searching, and sorting courses.
+	c) Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. Then use option 6 to load course data from MongoDB.
+	d) The GUI includes interactive elements such as dropdowns, text input, and buttons for a seamless experience.
+
+2) Running the Command-Line Interface (CLI) Mode
+
+	a) Open a command prompt/windows PowerShell/terminal and navigate to the program directory.
+	b) Run: python course_planner.py
+	c) Navigate the menu using the provided options.
+	d) Start with option 1 and enter courses.csv. The CSV file should be loaded successfully. The use option 6 to load course data from MongoDB.
+	e) Use options 2, 3, 4, or 5 to perform course searches. Use option 9 to exit the program.
+
+Error Hanlding & Troubleshooting:
+
+1) File Not Found?
+	a) ensure courses.csv is in the same directory as course_planner.py
+
+2) Invalid Input?
+	a) Check that course IDs exist within the CSV
+
+3) No Search Result?
+	a) Try different keywords for interactive search
+
+4) MongoDB Errors?
+	a) Ensure MongoDB is running before loading data: net start MongoDB
+	b) If mongoImport fails, check your MongoDB version
+
+5) Tkinter GUI Not Launching?
+	a) Ensure tkinter is installed:
+		pip install tk
+
+Future Enhancements:
+
+1) Implement MongoDB Atlas for cloud-based storage.
+
+2) Add function for creating a tentative course schedule.
+
+3) Expand search features using AI-based recommendations.
